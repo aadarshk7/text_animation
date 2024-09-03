@@ -43,6 +43,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
+            Positioned(
+              top: 200,
+              child: DefaultTextStyle(
+                  style: TextStyle(
+                      fontSize: 30, fontFamily: 'popin', color: Colors.blue),
+                  child: AnimatedTextKit(
+                      repeatForever: false,
+                      totalRepeatCount: 1,
+                      animatedTexts: [
+                        TypewriterAnimatedText(
+                            'When you talk, you are only repeating what you already know. But if you listen, you may learn something new.',
+                            speed: const Duration(milliseconds: 100)),
+                      ])),
+            ),
           ],
         ),
       ),
