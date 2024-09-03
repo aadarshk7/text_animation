@@ -25,7 +25,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Container(
                 margin: const EdgeInsets.only(left: 20, right: 20),
                 height: 100,
-                color: Colors.redAccent,
+                color: Colors.red,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                 ),

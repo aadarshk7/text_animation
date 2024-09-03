@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # text_animation
 
 A new Flutter project.
@@ -14,3 +15,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# text_animation
+>>>>>>> b5580c0b79c729ef4f4dac2de444ed24eb48267a
