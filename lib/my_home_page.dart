@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -27,6 +28,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.redAccent,
                   borderRadius: BorderRadius.circular(20),
                 ),
+                child: DefaultTextStyle(
+                    style: const TextStyle(
+                      fontSize: 30,
+                      color: Colors.white,
+                    ),
+                    child: AnimatedTextKit(animatedTexts: [
+                      RotateAnimatedText('Hello World'),
+                    ])),
               ),
             ),
           ],
