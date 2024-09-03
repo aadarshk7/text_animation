@@ -45,15 +45,16 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Positioned(
               top: 200,
+              left: 20,
               child: DefaultTextStyle(
                   style: TextStyle(
                       fontSize: 30, fontFamily: 'popin', color: Colors.blue),
                   child: AnimatedTextKit(
-                      repeatForever: false,
-                      totalRepeatCount: 1,
+                      // repeatForever: false,
+                      // totalRepeatCount: 1,
                       animatedTexts: [
-                        TypewriterAnimatedText(
-                            'When you talk, you are only repeating what you already know. But if you listen, you may learn something new.',
+                        TyperAnimatedText(
+                            'This is a simple text animation example',
                             speed: const Duration(milliseconds: 100)),
                       ])),
             ),
