@@ -16,17 +16,15 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Container(
         child: Stack(
-          children: [
+          children: <Widget>[
             Positioned(
               top: 70,
-              left: 0,
-              right: 0,
               width: width,
               child: Container(
                 margin: const EdgeInsets.only(left: 20, right: 20),
                 height: 100,
-                color: Colors.red,
                 decoration: BoxDecoration(
+                  color: Colors.redAccent,
                   borderRadius: BorderRadius.circular(20),
                 ),
               ),
