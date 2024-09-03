@@ -11,6 +11,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  bool showanimation = false;
+  @override
+  void initState() {
+    Future.delayed(Duration(milliseconds: 5000), () {});
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -53,8 +60,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(
                         fontSize: 30, fontFamily: 'popin', color: Colors.blue),
                     child: AnimatedTextKit(
-                        // repeatForever: false,
-                        // totalRepeatCount: 1,
+                        repeatForever: false,
+                        totalRepeatCount: 1,
                         animatedTexts: [
                           TyperAnimatedText(
                               'This is a simple text animation example',
@@ -64,6 +71,31 @@ class _MyHomePageState extends State<MyHomePage> {
                           TyperAnimatedText('Animation Example',
                               speed: const Duration(milliseconds: 100)),
                         ])),
+              ),
+            ),
+            showanimationPositioned(
+              top: 400,
+              width: width,
+              child: Container(
+                margin: const EdgeInsets.only(left: 20, right: 20),
+                height: 100,
+                decoration: BoxDecoration(
+                  color: Colors.blueAccent,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Center(
+                  child: DefaultTextStyle(
+                      style: const TextStyle(
+                        fontSize: 30,
+                        color: Colors.white,
+                      ),
+                      child: AnimatedTextKit(
+                          repeatForever: false,
+                          totalRepeatCount: 1,
+                          animatedTexts: [
+                            RotateAnimatedText('Hello World', rotateOut: false),
+                          ])),
+                ),
               ),
             ),
           ],
