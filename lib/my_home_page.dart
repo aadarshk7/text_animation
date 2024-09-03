@@ -45,18 +45,26 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Positioned(
               top: 200,
-              left: 20,
-              child: DefaultTextStyle(
-                  style: TextStyle(
-                      fontSize: 30, fontFamily: 'popin', color: Colors.blue),
-                  child: AnimatedTextKit(
-                      // repeatForever: false,
-                      // totalRepeatCount: 1,
-                      animatedTexts: [
-                        TyperAnimatedText(
-                            'This is a simple text animation example',
-                            speed: const Duration(milliseconds: 100)),
-                      ])),
+              left: 0,
+              child: Container(
+                margin: const EdgeInsets.only(left: 20, right: 20),
+                width: width - 40,
+                child: DefaultTextStyle(
+                    style: TextStyle(
+                        fontSize: 30, fontFamily: 'popin', color: Colors.blue),
+                    child: AnimatedTextKit(
+                        // repeatForever: false,
+                        // totalRepeatCount: 1,
+                        animatedTexts: [
+                          TyperAnimatedText(
+                              'This is a simple text animation example',
+                              speed: const Duration(milliseconds: 100)),
+                          TyperAnimatedText('Simple Animation Example',
+                              speed: const Duration(milliseconds: 100)),
+                          TyperAnimatedText('Animation Example',
+                              speed: const Duration(milliseconds: 100)),
+                        ])),
+              ),
             ),
           ],
         ),
