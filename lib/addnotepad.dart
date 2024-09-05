@@ -103,6 +103,14 @@ class _AddNotePadState extends State<AddNotePad> {
                           subtitle: Text(notes[index]['content']),
                         )),
           ),
+          FloatingActionButton.extended(
+            onPressed: () {
+              print('Extended Floating Action Button Pressed');
+            },
+            icon: Icon(Icons.add),
+            label: Text('Add Item'),
+            backgroundColor: Colors.blue,
+          ),
         ],
       ),
     );
