@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:text_animation/my_home_page.dart';
 import 'package:text_animation/text_emojis.dart';
 
 void main() {
