@@ -15,18 +15,18 @@ class _TextEmojisAnimationState extends State<TextEmojisAnimation> {
     return Scaffold(
       body: Center(
         child: Container(
-          height: 210,
-          width: 300,
+          height: 199,
+          width: 255,
           decoration: BoxDecoration(
-            color: Colors.deepPurple,
+            color: Colors.lightBlueAccent,
             borderRadius: BorderRadius.circular(40),
           ),
           child: Column(
             children: <Widget>[
               const Text(
-                "Hello Flutter",
+                "Flutter Emoji's",
                 style: TextStyle(
-                    fontSize: 21,
+                    fontSize: 25,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               ),
@@ -34,8 +34,20 @@ class _TextEmojisAnimationState extends State<TextEmojisAnimation> {
               RichText(
                 text: const TextSpan(children: [
                   TextSpan(
-                      text: ''
-                          '')
+                      text: '🚀 ',
+                      style: TextStyle(
+                        fontSize: 30,
+                      )),
+                  TextSpan(
+                      text: ' 💻 ',
+                      style: TextStyle(
+                        fontSize: 60,
+                      )),
+                  TextSpan(
+                      text: '✨ ',
+                      style: TextStyle(
+                        fontSize: 30,
+                      )),
                 ]),
               )
             ],
