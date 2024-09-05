@@ -17,7 +17,7 @@ class _AddNotePadState extends State<AddNotePad> {
 
   //Function for post request
   Future<void> PostNote() async {
-    final url = Uri.parse("https://jsonplaceholder.typicode.com/post");
+    final url = Uri.parse("https://jsonplaceholder.typicode.com/posts");
     final response = await http.post(
       url,
       headers: <String, String>{
