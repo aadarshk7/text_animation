@@ -103,6 +103,16 @@ class _AddNotePadState extends State<AddNotePad> {
                           subtitle: Text(notes[index]['content']),
                         )),
           ),
+          IconButton(
+            icon: Icon(Icons.search), // The icon displayed on the button
+            onPressed: () {
+              // Action when the button is pressed
+              print('Search Icon Button Pressed');
+            },
+            color: Colors.blue, // Icon color
+            tooltip: 'Search', // Tooltip when the user long-presses or hovers
+            iconSize: 30.0, // Icon size
+          ),
         ],
       ),
     );
