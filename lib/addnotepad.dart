@@ -17,7 +17,7 @@ class _AddNotePadState extends State<AddNotePad> {
 
   //Function for post request
   Future<void> PostNote() async {
-    final url = Uri.parse("https://jsonplaceholder.typicode.com/post");
+    final url = Uri.parse("https://jsonplaceholder.typicode.com/posts");
     final response = await http.post(
       url,
       headers: <String, String>{
@@ -102,16 +102,6 @@ class _AddNotePadState extends State<AddNotePad> {
                           title: Text(notes[index]['title']),
                           subtitle: Text(notes[index]['content']),
                         )),
-          ),
-          IconButton(
-            icon: Icon(Icons.search), // The icon displayed on the button
-            onPressed: () {
-              // Action when the button is pressed
-              print('Search Icon Button Pressed');
-            },
-            color: Colors.blue, // Icon color
-            tooltip: 'Search', // Tooltip when the user long-presses or hovers
-            iconSize: 30.0, // Icon size
           ),
         ],
       ),
